@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+       
+      //  Temperature in degrees Fahrenheit (°F) = (Temperature in degrees Celsius (°C) * 9/5) + 32.
+      // Temperature in degrees Celsius (°C) = (Temperature in degrees Fahrenheit (°F) - 32) * 5/9.
+      const Fahrenheit = [20, 30, 10];
+      const Celsius = [6.3, 3.3, 4.4];
+      function convert(Fahrenheit, Celsius) {
+        if (Celsius) {
+          const Temperature = (Celsius * 9) / 5 + 32;
+          return Temperature;
+        } else {
+          const Temperature = ((Fahrenheit - 32) * 5) / 9;
+          return Temperature;
+        }
+      }
+      const final = convert(Fahrenheit, Celsius[0]);
+      console.log(final);
+      // Function that converts distance based on the input unit
+      const kilometers = [5, 8, 13];
+      const miles = [3, 6, 10];
+
+      function convertDistance(distance, unit) {
+        if (unit === "mi") {
+          return distance * 1.609344; // Miles to kilometers
+        } else if (unit === "km") {
+          return distance / 1.609344; // Kilometers to miles
+        }
+      }
+
+      // Converting kilometers to miles
+      const convertedToMiles = kilometers.map((km) =>
+        convertDistance(km, "km")
+      );
+      // Converting miles to kilometers
+      const convertedToKilometers = miles.map((mi) =>
+        convertDistance(mi, "mi")
+      );
+
+      console.log("Kilometers to Miles:", convertedToMiles);
+      console.log("Miles to Kilometers:", convertedToKilometers);
+      const person = {
+        name: "jhon",
+        year: 1991,
+        friends: ["mikel", "sam", "tom"],
+        calage() {
+          this.age = 2024 - this.year;
+        },
+      };
+      const person1 = {
+        name: "kakak",
+        year: 1998,
+        friends: ["mikel", "sam", "tom"],
+        calage() {
+          this.age = 2024 - this.year;
+        },
+      };
+      console.log("age", person.calage(), person1.calage());
+      console.log(person, person1);
+      console.log(
+        `${person.name} has ${person.friends.length} friends,and his best friend is called ${person.friends[0]}`
+      );
+      if (person.friends[0] === "mikel") {
+        console.log(`kkk`);
+      }
+      /* Write your code below. Good luck! 🙂 */
+      const mark = {
+        fullName: "Mark Miller",
+        mass: 78,
+        height: 1.69,
+        calcBMI() {
+          this.bmi = this.mass / (this.height * this.height);
+          console.log("bmimark", this.bmi);
+          return this.bmi;
+        },
+      };
+      const john = {
+        fullName: "John Smith",
+        mass: 92,
+        height: 1.95,
+        calcBMI() {
+          this.bmi = this.mass / (this.height * this.height);
+          return this.bmi;
+          console.log("bmijohn", this.bmi);
+        },
+      };
+
+      if (mark.calcBMI() < john.calcBMI()) {
+        console.log(
+          `${john.fullName} BMI (${john.bmi}) is higher than ${mark.fullName} (${mark.bmi})!`
+        );
+      } else {
+        console.log(
+          `${mark.fullName} BMI (${mark.bmi}) is higher than ${john.fullName} (${john.bmi})!`
+        );
+      }
+      //   console.log(mark.calcBMI());
+      //   console.log(john.calcBMI());
+     
+     const array1 =[
+        "tyuut",78,"iouoo",false
+     ]
+     const array2 =[]
+     console.log(array1)
+    //  for(i=0;i<array1.length;i++){
+    //     console.log(`${array1}`)
+    //     array2(i) = typeof array1(i);
+    //  }
+    //  console.log(array2)
+ array1.push("apple")
+ console.log(array1)
+ array1.pop()
+ array1.unshift("banana")
+ array1.shift("banana")
+
+ console.log(array1)
+
+ const year1 =[2006,2003,1991,1998,1973];
+ const ages =[];
+ for(i=0; i<year1.length;i++){
+    ages.push(2024-year1[i])
+
+ }
+ console.log(ages)
+    </script>
+  </head>
+  <body></body>
+</html>

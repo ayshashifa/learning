@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(15, 108, 77);
+        color: white;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript fundamentals</h1>
+    <script>
+      //  Example 1: Check Palindrome Using for Loop
+      //    const text = prompt("enter the value");
+      //    function checkpalindrome(text){
+      //     for(i= 0; i<text.length; i++){
+      //         if(text[i] !== text[text.length-1-i] ){
+      //             return "not a Palindrome"
+      //         }else{
+      //             return "it is Palindrome"
+      //         }
+      //     }
+      //    }
+      //    const answer = checkpalindrome(text);
+      //    console.log(answer);
+      // Check Palindrome using built-in Functions
+      //    const string = prompt("enter the word");
+      //    const reverseString = string.split("").reverse().join("").toLocaleLowerCase();
+      //    console.log(reverseString)
+      //     function Palindrome (string){
+      //         if(string === reverseString){
+      //             console.log("it is Palindrome")
+      //         }else{
+      //             console.log("not a Palindrome")
+      //         }
+      //     }
+      //     const answer1 = Palindrome(string.toLocaleLowerCase());
+      //     console.log(string)
+      //   Write a function to reverse a string without using the reverse() method.
+      // const text = prompt("Enter the text:");
+      // const reversetext = text.split("").reverse().join("");
+      // const final = console.log(reversetext)
+      //   const text = prompt("Enter the text:");
+      //   function reversetexts(text) {
+      //     let reverse = ""; // Initialize the reverse string
+      //     for (let i = text.length - 1; i >= 0; i--) {
+      //       reverse += text[i]; // Append each character in reverse order
+      //     }
+      //     return reverse;
+      //   }
+      //   const value = reversetexts(text);
+      //   console.log(value);
+
+      // Write a function to capitalize the first letter of each word in a sentence.
+      // const word =prompt("enter the value");
+      // function change (word){
+      //     for(i=1;i<word.length;i++){
+      //         const firstletter =word[0].toUpperCase()+word.slice(1);
+      //         console.log(firstletter)
+      //     }
+      // }
+      // const value =change(word);
+
+      // const array1 = [234,43,554,898,78];
+      // const minumnum = Math.min(...array1);
+      // const maxmum =Math.max(...array1);
+      // console.log("maxmum",maxmum)
+      // console.log("minumnum",minumnum)
+
+      //   Implement a function to remove duplicates from an array.
+      // const array = [443, 3, 4, 98, 3, 78, 87];
+      //   function duplicate(array) {
+      //     const dupli = [...new Set(array)]
+      //     return dupli;
+      //   }
+
+      //   const value = duplicate(array);
+      //   console.log(value);
+      // Write a function to sort an array of numbers in ascending order without using built-in sorting methods.
+      // const array =[12,98,34,8,4,3,77,5];
+      // const sort =array.sort((a,b)=>a-b);
+      // console.log(sort)
+      // const assending = sort.reverse("");
+      // console.log("assending",assending);
+
+      // for(i=0; i<array.length;i++){
+      //     const assendingOrder = array[i-1];
+      //     console.log("assendingOrder",assendingOrder)
+      // }
+      // for(i>=0; i<array.length-1;i++){
+      //     const assendingOrder = array[i+1];
+      //     console.log("jjk",assendingOrder)
+      // }
+
+      // Create an object representing a person with properties
+      // like name, age, and occupation. Add a method to calculate the
+      // person's retirement age based on their current age.
+      //   const person = {
+      //       name:"aysha",
+      //       age:25,
+      //       occupation:"software developer",
+      //       rage(){
+      //           this.reage =60-this.age
+      //       }
+      //   }
+      //   console.log(person.rage());
+      //   console.log(person)
+      /////////////////////////////
+      //   Write a function to merge two objects into one.
+      // const obj1 ={name:"aysha",age:25}
+      // const obj2 ={occupation:"software developer",}
+      // const obj3 = {...obj1,...obj2}
+      // console.log(obj3)
+
+      // Write a function to check if a number is even or odd.
+      //   const num = 14;
+      //   if (num % 2 === 0) {
+      //     console.log("is even num");
+      //   } else {
+      //     console.log("is odd num");
+      //   }
+      // Implement a function to find the factorial of a given number.
+      //   const number = 5;
+      //   function factorial(number) {
+      //     if(number === 0){
+      //         return 1
+      //     }else{
+      //     return number * factorial(number - 1);
+      //   }
+      // }
+      //   console.log(factorial(number));
+      //   const num = 6;
+      //   // fn=fn-1+fn-2
+      //   let a = 0,b = 1,c,i;
+      //   function fib(num) {
+      //     for (i = 2; i <= num; i++) {
+      //       c = a + b;
+      //       a = b;
+      //       b = c;
+      //       console.log(c)
+      //     }
+      //     return c;
+      //   }
+      //   console.log(fib(num));
+
+      // Create a function that throws an error if a given number is negative.
+    //   const num = -1;
+    //   function throwError(num) {
+    //     if (num < 0) {
+    //       throw new Error("given number is negative");
+    //       // console.log("given number is negative")
+    //     } else {
+    //       console.log("given number is positive");
+    //     }
+    //   }
+    //   try {
+    //     throwError(num);
+    //   } catch (err) {
+    //     console.error(err.message);
+    //   }
+   
+    </script>
+  </body>
+</html>
